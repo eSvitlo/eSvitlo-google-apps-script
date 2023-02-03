@@ -6,8 +6,8 @@ function getDaySchedule(rows, date) {
     if (value[0] === weekday) {
       let /** @type {Date} */ newDate = value[1];
       newDate.setFullYear(date.getFullYear());
-      newDate.setMonth(date.getMonth());
       newDate.setDate(date.getDate());
+      newDate.setMonth(date.getMonth());
 
       result.push(newDate);
     }
